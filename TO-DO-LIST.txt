@@ -1,0 +1,42 @@
+TODO:
+
+DATA PREP
+########################################################################################################
+- get census dissemination area shapefile
+    - create from DB_Ontario file provided by Ignacio
+    - might as well populate these with relevant census data
+
+- find and clean GTFS Scheduled data for 2015
+    -> replicate data structure of 2025 shapefiles for 2015
+
+- find and clean GTFS-RT data 2025 -> updates_2025.shp
+- find and clean GTFS-RT data 2015 -> updates_2015.shp
+
+
+SPATIAL ANALYSIS
+########################################################################################################
+- RealTime stuff at a total standstill right now
+
+- isochrone stuff
+    - need to reevaluate method for things
+    - isochrones need origins and/or destinations, so need to make decisions here
+    -> create_isochrones.py that can be called on 2015 and 2025 files
+
+MAKING THINGS PRETTY AND EASY
+########################################################################################################
+- make file constants.py
+    - to read in shapefiles and create nice clean variables that can be imported and used in other files
+    - possibly include here the stops-routes connection data structure
+    - just hardcoding variable names, constants
+
+- make file plotter.py (not necessary but I think it's a good idea)
+    - to auto-format plots to look good and consistent across files
+    - would help keep us from forgetting titles, north arrows, scalebars
+    - keep consistent formatting
+
+    - would be difficult to implement when we want things to be layered or otherwise customized
+    - difference between plotting points, lines, and polygons
+
+    - maybe a collection of functions that cover main visualization types
+    - OR collection of functions that handle individual elements (scalebars, arrows, legends, titles)
+    
