@@ -9,8 +9,8 @@ DATA PREP
 - find and clean GTFS Scheduled data for 2015
     -> replicate data structure of 2025 shapefiles for 2015
 
-- find and clean GTFS-RT data 2025 -> updates_2025.shp
-- find and clean GTFS-RT data 2015 -> updates_2015.shp
+- clean delay data for 2015
+- clean delay data for 2025
 
 
 SPATIAL ANALYSIS
