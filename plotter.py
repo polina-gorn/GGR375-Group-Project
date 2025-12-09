@@ -19,6 +19,9 @@ def plot_local_moran(local_moran_obj, gdf, title):
     ax = local_moran_obj.plot(gdf, legend = True, legend_kwds = {'loc': 'lower right'})
     ax.set_title(title)
     ax.set_axis_off()
+    ax.add_artist(ScaleBar(1, loc = 'lower left'))
+    north_arrow(
+    ax, location="upper left", rotation={"crs": gdf.crs, "reference": "center"})
     return ax.figure, ax
 
 def plot_choropleths(gdf: gpd.GeoDataFrame, suptitle: str, titles, columns,
@@ -53,6 +56,9 @@ def plot_choropleths(gdf: gpd.GeoDataFrame, suptitle: str, titles, columns,
                  legend_kwds={'loc': 'lower right', 'title': schemes[i]})
         axes[0, i].set_title(titles[i])
         axes[0, i].set_axis_off()
+        axes[0,i].add_artist(ScaleBar(1, loc = 'lower left'))
+        north_arrow(
+        axes[0,i], location="upper left", rotation={"crs": gdf.crs, "reference": "center"})
         
     if ncols == 1:
         return fig, axes[0, 0]
@@ -78,10 +84,9 @@ def plot_choropleth(gdf: gpd.GeoDataFrame, title: str, column: str,
              legend_kwds={'loc': 'lower right'})
     ax.set_title(title)
     ax.set_axis_off()
-    ax.add_artist(ScaleBar(1))
+    ax.add_artist(ScaleBar(1, loc = 'lower left'))
     north_arrow(
-    ax, location="upper left", rotation={"crs": gdf.crs, "reference": "center"}
-)
+    ax, location="upper left", rotation={"crs": gdf.crs, "reference": "center"})
         
     return fig, ax
 
