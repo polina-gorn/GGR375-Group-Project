@@ -1,6 +1,11 @@
 from matplotlib import pyplot as plt
 import geopandas as gpd
 
+from geodatasets import get_path
+from matplotlib_scalebar.scalebar import ScaleBar
+from matplotlib_map_utils.core.north_arrow import NorthArrow, north_arrow
+
+
 subway_lines_2015 = None
 subway_lines_2025 = None
 
@@ -73,6 +78,10 @@ def plot_choropleth(gdf: gpd.GeoDataFrame, title: str, column: str,
              legend_kwds={'loc': 'lower right'})
     ax.set_title(title)
     ax.set_axis_off()
+    ax.add_artist(ScaleBar(1))
+    north_arrow(
+    ax, location="upper left", rotation={"crs": gdf.crs, "reference": "center"}
+)
         
     return fig, ax
 
@@ -91,7 +100,7 @@ def plot_subway_lines_2015(fig, ax):
         subway_lines_2015 = gpd.read_file('./sept_2015_subway/subway.shp')
         subway_lines_2015 = subway_lines_2015.to_crs(3347)
 
-    subway_lines_2015.plot(ax=ax, color='black', linewidth=3)
+    subway_lines_2015.plot(ax=ax, color='black', linewidth=3, alpha=0.8)
 
     return fig, ax
 
