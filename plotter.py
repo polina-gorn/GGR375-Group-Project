@@ -32,10 +32,11 @@ def plot_choropleths(gdf: gpd.GeoDataFrame, suptitle: str, titles, columns,
     if len(columns) != len(titles):
         print('Lengths of lists do not match!')
         return None
-    if schemes == None:
-        schemes = ['quantiles' * len(columns)]
 
     ncols = len(titles)
+
+    if schemes == None:
+        schemes = ['quantiles'] * ncols
 
     figsize = (10 * ncols, 8)
 
