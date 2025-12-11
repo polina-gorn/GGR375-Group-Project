@@ -1,0 +1,4 @@
+Univariate Global Moran's I Results - 15_changeUnivariate Global Moran's I Results - 15_change
+Moran's I: 0.233413950195723
+p-value: 0.001
+z-score: 10.333492469961945

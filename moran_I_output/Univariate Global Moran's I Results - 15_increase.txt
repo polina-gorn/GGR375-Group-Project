@@ -1,0 +1,4 @@
+Univariate Global Moran's I Results - 15_increaseUnivariate Global Moran's I Results - 15_increase
+Moran's I: 0.08195155165671883
+p-value: 0.001
+z-score: 3.4992093734149092
