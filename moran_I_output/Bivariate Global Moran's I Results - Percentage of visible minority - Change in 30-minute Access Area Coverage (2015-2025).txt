@@ -1,0 +1,4 @@
+Bivariate Global Moran's I Results - Percentage of visible minority - Change in 30-minute Access Area Coverage (2015-2025)Bivariate Global Moran's I Results - Percentage of visible minority - Change in 30-minute Access Area Coverage (2015-2025)
+Moran's I: 0.16368572995510117
+p-value: 0.001
+z-score: 4.925459071837547

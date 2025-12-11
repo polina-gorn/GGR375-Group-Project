@@ -1,0 +1,4 @@
+Bivariate Global Moran's I Results - Homeownership rate (%) - Net increase of 30-minute Access Area Coverage (2015-2025)Bivariate Global Moran's I Results - Homeownership rate (%) - Net increase of 30-minute Access Area Coverage (2015-2025)
+Moran's I: 0.10250800622569836
+p-value: 0.001
+z-score: 3.8617515075710176

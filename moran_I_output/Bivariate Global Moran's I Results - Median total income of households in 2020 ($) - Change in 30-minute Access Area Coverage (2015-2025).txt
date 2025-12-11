@@ -1,0 +1,4 @@
+Bivariate Global Moran's I Results - Median total income of households in 2020 ($) - Change in 30-minute Access Area Coverage (2015-2025)Bivariate Global Moran's I Results - Median total income of households in 2020 ($) - Change in 30-minute Access Area Coverage (2015-2025)
+Moran's I: -0.009409027386691743
+p-value: 0.37
+z-score: -0.32060924389516476

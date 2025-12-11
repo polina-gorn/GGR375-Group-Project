@@ -1,0 +1,4 @@
+Univariate Global Moran's I Results - Percentage of visible minorityUnivariate Global Moran's I Results - Percentage of visible minority
+Moran's I: 0.5254431786444961
+p-value: 0.001
+z-score: 22.19278032201487

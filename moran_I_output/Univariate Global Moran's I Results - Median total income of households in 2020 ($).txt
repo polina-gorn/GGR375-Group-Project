@@ -1,0 +1,4 @@
+Univariate Global Moran's I Results - Median total income of households in 2020 ($)Univariate Global Moran's I Results - Median total income of households in 2020 ($)
+Moran's I: 0.4636222078534422
+p-value: 0.001
+z-score: 20.881900215608145
