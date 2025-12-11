@@ -1,0 +1,4 @@
+Univariate Global Moran's I Results - Homeownership rate (%)Univariate Global Moran's I Results - Homeownership rate (%)
+Moran's I: 0.3249445179449491
+p-value: 0.001
+z-score: 14.570827040318889
