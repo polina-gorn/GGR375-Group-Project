@@ -11,6 +11,21 @@ The .pbf file can be downloaded from here: https://download.bbbike.org/osm/bbbik
 The GTFS zips are accessible from Open Data Toronto and TransitLand - note : A ZIPPED VERSION IS REQUIRED TO RUN SOME OF THESE FILES
 If you are reading this and are our professor/TA, you will be emailed a link to a google drive containing these files.
 
+Packages used within this project:
+- geopandas
+- pandas
+- matplotlib
+- esda
+- libpysal
+- Levenshtein
+- shapely
+- r5py
+- osmnx
+- plotly.express
+- os
+- string
+- re
+
 To run the isochrone_creator.py file you will need the following:
 - A JDK installation. We used this: https://www.oracle.com/ca-en/java/technologies/downloads/
 - GTFS zips STILL ZIPPED
@@ -23,12 +38,17 @@ While all the code files should be runnable as-is assuming data files are stored
 STAGE 1:
 geocode_intersections.ipynb
 TTC_delays_processed.ipynb
+Coordinates for Delays_Attempt_1.ipynb
+create_ct_file.ipynb
 
 STAGE 2:
+isochrone_creator.py
 bus_delay_Levenshtein.ipynb
-create_isochrone_gdf.ipynb
 
 STAGE 3:
+create_isochrone_gdf.ipynb
+
+STAGE 4:
 create_isochrone_visuals.ipynb
 create_morans_i_maps.ipynb
 create_bivariate_maps.ipynb
